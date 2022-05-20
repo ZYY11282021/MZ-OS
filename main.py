@@ -1,18 +1,19 @@
 import os
 
 print("欢迎来到MZ-OS!")
+print("如果你需要一些帮助，请输入“帮助”")
 
 def iput():
     global iputContent
     iputContent = input("$ ")
 
 def oput():
-    if iputContent == "exit":
+    if iputContent == "退出":
         exit()
-    elif iputContent == "clear":
+    elif iputContent == "清屏r":
         os.system("cls")
     else:
-        print('Command "%s" not found.' % iputContent)
+        print("找不到命令“%s”" % iputContent)
         
 while True:
     iput()
