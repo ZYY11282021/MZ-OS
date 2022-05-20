@@ -18,6 +18,7 @@ def oput():
         print("退出: 退出MZ-OS")
         print("清屏: 清空屏幕")
         print("帮助: 显示此界面")
+        print("下载: 下载指定URL里的内容\n语法: 下载 URL")
     elif iputContent[:2] == "下载":
         spLst = iputContent.split()
         req = requests.get(spLst[1])
