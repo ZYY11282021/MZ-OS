@@ -29,7 +29,7 @@ def oput():
             with open(filename, "wb") as f:
                 f.write(req.content)
                 print("下载成功")
-        except Exception as e:'
+        except Exception as e:
             print("下载失败 错误信息:", e)
         
     else:
