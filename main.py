@@ -13,3 +13,7 @@ def oput():
         os.system("cls")
     else:
         print('Command "%s" not found.' % iputContent)
+        
+while True:
+    iput()
+    oput()
