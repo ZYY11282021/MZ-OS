@@ -10,8 +10,13 @@ def iput():
 def oput():
     if iputContent == "退出":
         exit()
-    elif iputContent == "清屏r":
+    elif iputContent == "清屏":
         os.system("cls")
+    elif iputContent == "帮助":
+        print("命令列表:")
+        print("退出: 退出MZ-OS")
+        print("清屏: 清空屏幕")
+        print("帮助: 显示此界面")
     else:
         print("找不到命令“%s”" % iputContent)
         
