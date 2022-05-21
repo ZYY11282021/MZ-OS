@@ -19,6 +19,7 @@ def oput():
         print("清屏: 清空屏幕")
         print("帮助: 显示此界面")
         print("下载: 下载指定URL里的内容\n\t语法: 下载 URL")
+        print("当前目录: 输出当前的工作目录")
     elif iputContent[:2] == "下载":
         spLst = iputContent.split()
         req = requests.get(spLst[1])
@@ -31,7 +32,8 @@ def oput():
                 print("下载成功")
         except Exception as e:
             print("下载失败 错误信息:", e)
-        
+    elif iputContent == "当前目录":
+        print(os.path.isdir())
     else:
         print("找不到命令“%s”" % iputContent)
         
