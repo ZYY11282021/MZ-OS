@@ -33,7 +33,7 @@ def oput():
         except Exception as e:
             print("下载失败 错误信息:", e)
     elif iputContent == "当前目录":
-        print(os.path.isdir())
+        print(os.path.abspath(os.curdir))
     else:
         print("找不到命令“%s”" % iputContent)
         
