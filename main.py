@@ -25,13 +25,13 @@ def oput():
         req = requests.get(spLst[1])
         filename = spLst[1].split('/')[-1]
         if req.status_code != 200:
-            print("下载异常，请检查您的网络连接或输入的网址")
+            print("\033[31m错误 请检查您的网络连接或输入的网址\033[0m")
         try:
             with open(filename, "wb") as f:
                 f.write(req.content)
                 print("下载成功")
-        except Exception as e:
-            print("下载失败 错误信息:", e)
+        except:
+            print("\033[31m未知错误\033[0m")
     elif iputContent == "当前目录":
         print(os.path.abspath(os.curdir))
     else:
