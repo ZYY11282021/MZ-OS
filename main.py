@@ -10,6 +10,7 @@ def iput():
 
 def oput():
     if iputContent == "退出":
+        print("拜拜~")
         exit()
     elif iputContent == "清屏":
         os.system("cls")
