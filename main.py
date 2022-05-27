@@ -21,6 +21,7 @@ def oput():
         print("帮助: 显示此界面")
         print("下载: 下载指定URL里的内容\n\t语法: 下载 URL")
         print("当前目录: 输出当前的工作目录")
+        print("目录内容: 输出当前工作目录里的所有内容")
     elif iputContent[:2] == "下载":
         spLst = iputContent.split()
         req = requests.get(spLst[1])
