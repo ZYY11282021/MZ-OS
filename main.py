@@ -35,6 +35,8 @@ def oput():
             print("\033[31m未知错误\033[0m")
     elif iputContent == "当前目录":
         print(os.path.abspath(os.curdir))
+    elif iputContent == "目录内容":
+        print(os.listdir())
     else:
         print("找不到命令“%s”" % iputContent)
         
